@@ -7,9 +7,9 @@ sc=StandardScaler()
 
 #Loading scaleres and model
 def load_resources():   
-    model = joblib.load(r'C:\Users\Youssef Abdel Khaleq\graduation project depi\models\randomforest_model.pkl')
-    category_encoder = joblib.load(r'C:\Users\Youssef Abdel Khaleq\graduation project depi\encoders\le_merchant_category.pkl')
-    final_scaler = joblib.load(r"C:\Users\Youssef Abdel Khaleq\graduation project depi\scaler\final_scaler.pkl")
+    model = joblib.load('randomforest_model.pkl')
+    category_encoder = joblib.load('encoders/le_merchant_category.pkl')
+    final_scaler = joblib.load("final_scaler.pkl")
 
     return model, category_encoder, final_scaler
 
